@@ -279,9 +279,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Windows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Windows
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fix-audio-playback-dll-file-name-bug" class="md-nav__link">
+    Fix Audio Playback (.dll file name bug)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -393,6 +424,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fix-audio-playback-dll-file-name-bug" class="md-nav__link">
+    Fix Audio Playback (.dll file name bug)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -408,10 +454,16 @@
 
 
 <h1 id="install-on-windows">Install on Windows</h1>
-<p>Download the latest <code>.windows.zip</code> from <a href="https://github.com/simsapa/simsapa/releases/">Releases</a>.</p>
+<iframe width="750" height="420" src="https://www.youtube.com/embed/QEs__4wL18I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p>Download the latest Windows <code>.zip</code> from <a href="https://github.com/simsapa/simsapa/releases/">Releases</a>.</p>
 <p>Extract and move the folder, for example to <code>C:\</code>.</p>
 <p>The <code>Simsapa Dhamma Reader.exe</code> starts the application.</p>
-<p>Create a desktop shortcut to the .exe with Alt+Drag.</p>
+<p>Create a desktop shortcut to the .exe with <strong>Alt+Drag</strong>*.</p>
+<h2 id="fix-audio-playback-dll-file-name-bug">Fix Audio Playback (.dll file name bug)</h2>
+<p>The Qt audio playback has a bug which expects the wrong .dll filename on Windows, it can be fixed as shown below.</p>
+<p><a href="https://stackoverflow.com/questions/74500509/failed-to-setup-resampler-when-starting-qaudiosink">"Failed to setup resampler" when starting QAudioSink</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KwivBJhwUnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
