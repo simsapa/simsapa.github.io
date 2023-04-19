@@ -8,7 +8,7 @@ Installation guides: [MacOS](install/macos.md) / [Windows](install/windows.md) /
 
 A short feature demo:
 
-<iframe width="750" height="420" src="https://www.youtube.com/watch?v=Wu4T_CANnns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="750" height="420" src="https://www.youtube.com/embed/Wu4T_CANnns" title="Simsapa Dhamma Reader: Feature Demo (v0.3.2-alpha.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![Sutta Search](images/sutta-search-screenshot.jpg)
 
