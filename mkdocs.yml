@@ -8,6 +8,7 @@ nav:
     - "MacOS": install/macos.md
     - "Windows": install/windows.md
     - "Linux": install/linux.md
+    - "Portable Use": install/portable-use.md
     - "Uninstall": install/uninstall.md
   - Development:
     - "Running from Source": development/running-from-source.md
