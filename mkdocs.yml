@@ -10,6 +10,8 @@ nav:
     - "Linux": install/linux.md
     - "Portable Use": install/portable-use.md
     - "Uninstall": install/uninstall.md
+  - Features:
+    - "Search Queries": features/search-queries.md
   - Development:
     - "Running from Source": development/running-from-source.md
     - "Manual Database Setup": development/manual-database-setup.md
