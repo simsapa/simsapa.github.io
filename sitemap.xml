@@ -2,42 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://simsapa.github.io/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/development/manual-database-setup/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/development/running-from-source/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://simsapa.github.io/features/search-queries/</loc>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/install/linux/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/install/macos/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/install/portable-use/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/install/uninstall/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://simsapa.github.io/install/windows/</loc>
-         <lastmod>2023-05-16</lastmod>
+         <lastmod>2023-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
