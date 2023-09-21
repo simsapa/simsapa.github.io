@@ -32,7 +32,7 @@ Prefixing the word with the '+' sign means a term must be included, the '-' sign
 
 The texts are indexed with Pāli, English, etc. grammar stemmers, so declension forms will also match in the appropriate language.
 
-- **dukkha** will match **duddkaṁ / dukkhā / dukkhāni / dukkhena** etc.,
+- **dukkha** will match **dukkhaṁ / dukkhā / dukkhāni / dukkhena** etc.,
 - **bhikkhu kamma vipaka** will match **bhikkhave kammānaṁ vipāko**,
 - **monk receives robes** will match **monks receiving robes**.
 
