@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://simsapa.github.io/features/search-queries/">
+        <link rel="canonical" href="https://simsapa.github.io/features/dhamma-texts/">
       
       
-        <link rel="prev" href="../dhamma-texts/">
+        <link rel="prev" href="../../install/uninstall/">
       
       
-        <link rel="next" href="../../development/running-from-source/">
+        <link rel="next" href="../search-queries/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Search Queries - Simsapa Dhamma Reader</title>
+        <title>Dhamma Texts - Simsapa Dhamma Reader</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#search-queries" class="md-skip">
+        <a href="#dhamma-texts-included-in-simsapa" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Search Queries
+              Dhamma Texts
             
           </span>
         </div>
@@ -436,27 +436,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../dhamma-texts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Dhamma Texts
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -473,7 +452,7 @@
           
   
   <span class="md-ellipsis">
-    Search Queries
+    Dhamma Texts
   </span>
   
 
@@ -484,7 +463,7 @@
         
   
   <span class="md-ellipsis">
-    Search Queries
+    Dhamma Texts
   </span>
   
 
@@ -506,44 +485,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#search-modes-in-brief" class="md-nav__link">
+  <a href="#suttas" class="md-nav__link">
     <span class="md-ellipsis">
-      Search Modes in Brief
+      Suttas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fulltext-match-queries" class="md-nav__link">
+  <a href="#dictionaries" class="md-nav__link">
     <span class="md-ellipsis">
-      Fulltext Match Queries
+      Dictionaries
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Fulltext Match Queries">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#regex-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Regex search (.* icon)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fuzzy-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fuzzy search (~ icon)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -551,6 +506,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../search-queries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Search Queries
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -678,44 +654,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#search-modes-in-brief" class="md-nav__link">
+  <a href="#suttas" class="md-nav__link">
     <span class="md-ellipsis">
-      Search Modes in Brief
+      Suttas
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fulltext-match-queries" class="md-nav__link">
+  <a href="#dictionaries" class="md-nav__link">
     <span class="md-ellipsis">
-      Fulltext Match Queries
+      Dictionaries
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Fulltext Match Queries">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#regex-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Regex search (.* icon)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fuzzy-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fuzzy search (~ icon)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -734,66 +686,34 @@
                   
 
 
-<h1 id="search-queries">Search Queries</h1>
-<h2 id="search-modes-in-brief">Search Modes in Brief</h2>
-<p>Sutta references are matched first. Typing 'mn8', 'sn 56.11', 'iti92' will list those suttas.</p>
-<p><strong>Fulltext Match:</strong> it searches the content for keywords using the query expressions, non-accented letters matching accented ones. (I.e. it makes a query in the tantivy fulltext index and assigns scores to the results.)</p>
-<!--
-Fulltext search is faster and more flexible than the Exact Match (SQL) search, but yields many partial matches.
--->
-
-<p>Fulltext search matches words in full, not in part, e.g. 'bodhi' will not match 'bodhisatta', but words are stemmed and will match declensions, e.g. 'bodhiṁ / bodhiyā'.</p>
-<!--
-**Exact Match:** it searches the content for exact matches. (I.e. it makes SQL queries with **%query text%**.)
-
-Exact Match (via SQL) matches in part, i.e. if the query is exactly contained somewhere in the content. E.g. 'vitakka' will match 'kāma**vitakka**ṁ', but there is no stemming, and will not match 'vitakkeyya'.
--->
-
-<p><strong>Title / Headword Match:</strong> it searches only the titles of suttas or the headwords of dictionary words. (SQL queries)</p>
-<h2 id="fulltext-match-queries">Fulltext Match Queries</h2>
-<p>Powered by the <a href="https://github.com/quickwit-oss/tantivy">tantivy</a> fulltext search engine. Read more in the <a href="https://docs.rs/tantivy/latest/tantivy/query/struct.QueryParser.html">QueryParser</a> docs.</p>
-<p>The words in a query term are related as OR by default. <strong>kamma vipāka</strong> searches for entries which SHOULD include <strong>kamma</strong> OR <strong>vipāka</strong>, but not MUST include.</p>
-<p>Prefixing the word with the '+' sign means a term must be included, the '-' signs means it must be excluded.</p>
-<p><strong>bhikkhu +kamma -vipaka</strong> means should include 'bhikkhu', must include 'kamma', must exclude 'vipaka'.</p>
-<p>The texts are indexed with Pāli, English, etc. grammar stemmers, so declension forms will also match in the appropriate language.</p>
+<h1 id="dhamma-texts-included-in-simsapa">Dhamma Texts Included in Simsapa</h1>
+<h2 id="suttas">Suttas</h2>
 <ul>
-<li><strong>dukkha</strong> will match <strong>dukkhaṁ / dukkhā / dukkhāni / dukkhena</strong> etc.,</li>
-<li><strong>bhikkhu kamma vipaka</strong> will match <strong>bhikkhave kammānaṁ vipāko</strong>,</li>
-<li><strong>monk receives robes</strong> will match <strong>monks receiving robes</strong>.</li>
+<li><a href="https://suttacentral.net/">suttacentral.net</a></li>
+<li><code>pli</code> and <code>en</code> languages by default</li>
+<li>other languages as optional downloads via <code>Suttas &gt; Sutta Languages...</code> menu</li>
+<li><a href="https://tipitaka.org/cst4">tipitaka.org</a> CST4 Chaṭṭha Saṅgāyana Tipiṭaka</li>
+<li><a href="https://www.dhammatalks.org/">dhammatalks.org</a> Translations by Aj Thanissaro</li>
+<li><a href="https://www.tipitaka.net/tipitaka/dhp/">tipitaka.net</a> The Dhammapada: Verses and Stories Translated by Daw Mya Tin, M.A.</li>
+<li><a href="https://forestsangha.org/teachings/books/a-dhammapada-for-contemplation?language=English">A Dhammapada for Contemplation</a> by Ajahn Munindo</li>
+<li><a href="https://a-buddha-ujja.hu/">a-buddha-ujja.hu</a> Hungarian sutta translations</li>
+<li><a href="https://index.readingfaithfully.org/">index.readingfaithfully.org</a> Sutta Index of Topics</li>
+<li><a href="https://archive.org/details/VenDenmarkNyanadipa">The Silent Sages of Old</a> Translations by Bhante Nyanadipa</li>
+<li><a href="https://gretil.sub.uni-goettingen.de/gretil.html">GRETIL</a> Sanskrit Texts from GRETIL -- Göttingen Register of Electronic Texts in Indian Languages</li>
 </ul>
-<p>Latin terms are expanded to include diacritics, <strong>patipada</strong> will match <strong>paṭipadā</strong>.</p>
-<p>A pharse query is expressed with quote marks: <strong>"paṭhamena jhānena"</strong>.</p>
-<p>The query can match parts of the document:</p>
+<h2 id="dictionaries">Dictionaries</h2>
 <ul>
-<li><strong>title:sticks cessation</strong> - match 'sticks' in the title, 'cessation' in the content</li>
-<li><strong>word:kamma +work</strong> - match 'kamma' in the headword, must include 'work' in the content</li>
-<li><strong>uid:pj4</strong> - the uid should include 'pj4'</li>
-<li><strong>upekkhindriyaṁ -source:cst4</strong> - match 'upekkhindriyaṁ' in the content, exclude all cst4 documents</li>
-<li><strong>calmness +source:thanissaro</strong> - match 'calmness' in the content, only in documents by Bh. Thanissaro</li>
-<li><strong>+"buddhas of the past" +source:bodhi</strong> - must include the phrase 'buddhas of the past', only in documents by Bh. Bodhi</li>
+<li><code>DPD</code> Digital Pāḷi Dictionary <a href="https://digitalpalidictionary.github.io/">digitalpalidictionary.github.io</a> </li>
+<li><code>DPPN</code> Buddhist Dictionary of Pali Proper Names <a href="https://www.palikanon.com/english/pali_names/dic_idx.html">palikanon.com</a></li>
+<li><code>NYANAT</code> Manual of Buddhist Terms and Doctrines by Nyanatiloka <a href="https://www.palikanon.com/english/wtb/dic_idx.html">palikanon.com</a> </li>
+<li><code>PTS</code> The Pali Text Society's Pali-English dictionary <a href="https://dsal.uchicago.edu/dictionaries/pali/">dsal.uchicago.edu</a></li>
+<li><code>SBS-RU</code> Pali-Russian dictionary by Ven. Devamitta <a href="https://devamitta.github.io/pali/pali_dict.html">devamitta.github.io</a></li>
+<li><code>NCPED</code> <a href="https://discourse.suttacentral.net/t/implementing-the-new-concise-pali-english-dictionary/3413">suttacentral.net</a> New Concise Pali English Dictionary by Ven. Buddhadatta</li>
+<li><code>CPD</code> Critical Pāli Dictionary <a href="https://cpd.uni-koeln.de/">cpd.uni-koeln.de</a></li>
+<li><code>MW</code> Monier-Williams Sanskrit-English Dictionary, 1899 <a href="https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc2/index.php">sanskrit-lexicon.uni-koeln.de</a></li>
+<li><code>Whitney</code> Whitney's Roots <a href="https://sanskritlibrary.org/Sanskrit/whitney/index2.html">sanskritlibrary.org</a></li>
+<li><code>Wordnet</code> A Lexical Database for English <a href="https://wordnet.princeton.edu/download/current-version">wordnet.princeton.edu</a></li>
 </ul>
-<h4 id="regex-search-icon">Regex search (.* icon)</h4>
-<p>This option will parse the query as a regex pattern, but limited to globbing expressions, such as: <code>.* .+ a* a+</code></p>
-<p>The <code>.</code> (dot) matches any single character, <code>*</code> (asterisk) means 'zero or more' or the previous character, <code>+</code> (plus) means 'one or more'.</p>
-<ul>
-<li><strong>a*vitak.*</strong> - the word start with zero or more of 'a', followed by 'vitak', followed by zero or more characters</li>
-<li><strong>.*vitak.*</strong> - match any word containing 'vitak'</li>
-<li><strong>vitak.*</strong> - match starting with 'vitak'</li>
-</ul>
-<h4 id="fuzzy-search-icon">Fuzzy search (~ icon)</h4>
-<p>This option allows matching words which may differ from the query by N number of characters (i.e. the <a href="https://devopedia.org/levenshtein-distance">Levenshtein Distance</a>).</p>
-<p>Fuzzy search is not availble together with regex patterns.</p>
-<!--
-
-## Exact Match Queries
-
-Joining terms with **AND** creates filtered SQL queries.
-
-**kamma vipāka**: will match texts which contain the exact expression 'kamma vipāka' (including the space).
-
-**kamma AND vipāka**: will match texts which contain both 'kamma' and 'vipāka', anywhere in the text (including 'kammavipāka').
-
--->
 
 
 
