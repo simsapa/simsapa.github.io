@@ -1,17 +1,91 @@
 # Development: Running from Source
 
-## Linux / MacOS Setup
+## Linux Setup
 
 - Install Python 3.11
+- Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
+
+``` shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 - Install [Poetry](https://python-poetry.org/docs/)
-- Clone this repo and run `poetry install` to install dependencies
+
+``` shell
+pipx install poetry
+```
+
+Clone the Simsapa repo and install Python packages.
+
+``` shell
+git clone --depth=1 https://github.com/simsapa/simsapa.git
+cd simsapa
+poetry install
+```
 
 In the project root, enter a venv with poetry and start the app with:
 
 ``` shell
 poetry shell
-./run.py
+python3 run.py
 ```
+
+## MacOS Setup
+
+- Download XCode from the App Store
+- Install [Homebrew](https://brew.sh/)
+
+``` shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- Install Python 3.11
+
+
+``` shell
+brew install python@3.11
+```
+
+- Install Rust (stable channel)
+
+``` shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+- Install [Poetry](https://python-poetry.org/docs/)
+
+``` shell
+pipx install poetry
+```
+
+Clone the Simsapa repo and install Python packages.
+
+``` shell
+git clone --depth=1 https://github.com/simsapa/simsapa.git
+cd simsapa
+poetry install
+```
+
+In the project root, enter a venv with poetry and start the app with:
+
+``` shell
+poetry shell
+python3 run.py
+```
+
+### Build the .dmg
+
+The repo uses the [pydoit](https://pydoit.org/) task runner.
+
+With no arguments (just `doit` 💥), the default task is `update_build_open`, which updates the repo, installs libs, builds the app, and opens the `dist/` folder. `doit list` shows the available tasks.
+
+In the project root folder:
+
+``` shell
+doit
+```
+
+On success, the `dist/` folder should open. Double click on the `.dmg` file, drag the icon to Applications.
 
 ## Windows Setup
 
