@@ -2,18 +2,56 @@
 
 ## Linux Setup
 
-- Install Python 3.11
-- Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
+### Development Tools
+
+Install Python 3.11 (possibly with your distro's pacakge manager)
+
+Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
 
 ``` shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-- Install [Poetry](https://python-poetry.org/docs/)
+Type "1" to proceed with installation.
+
+Install [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
+
+``` shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+**Close the terminal** and open a new one to reload the environment variables.
+
+Install Node (stable)
+
+``` shell
+nvm install stable
+```
+
+Install [Poetry](https://python-poetry.org/docs/)
 
 ``` shell
 pipx install poetry
 ```
+
+(On your system it could be `pip`, `pip3` or `pipx`)
+
+At this point the following commands should work:
+
+``` shell
+python3 --version
+poetry --version
+rustup show
+node --version
+```
+
+Install the [sindresorhus/create-dmg](https://github.com/sindresorhus/create-dmg) tool
+
+``` shell
+npm install --global create-dmg
+```
+
+### Clone and Run Simsapa
 
 Clone the Simsapa repo and install Python packages.
 
@@ -32,33 +70,73 @@ python3 run.py
 
 ## MacOS Setup
 
-- Download XCode from the App Store
-- Install [Homebrew](https://brew.sh/)
+### Development Tools
+
+Download XCode from the App Store.
+
+Install [Homebrew](https://brew.sh/)
 
 ``` shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-- Install Python 3.11
+When the command finishes, it prints the commands to add Homebrew to your PATH under "Next steps".
+
+Install Python 3.11
 
 
 ``` shell
 brew install python@3.11
 ```
 
-- Install Rust (stable channel)
+Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
 
 ``` shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-- Install [Poetry](https://python-poetry.org/docs/)
+Type "1" to proceed with installation.
+
+Install [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
 
 ``` shell
-pipx install poetry
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
+**Close the terminal** and open a new one to reload the environment variables.
+
+Install Node (stable)
+
+``` shell
+nvm install stable
+```
+
+Install [Poetry](https://python-poetry.org/docs/)
+
+``` shell
+pip3 install poetry
+```
+
+At this point the following commands should work:
+
+``` shell
+python3 --version
+poetry --version
+rustup show
+node --version
+```
+
+Install the [sindresorhus/create-dmg](https://github.com/sindresorhus/create-dmg) tool
+
+``` shell
+npm install --global create-dmg
+```
+
+### Clone and Run Simsapa
+
 Clone the Simsapa repo and install Python packages.
+
+(Commands one line at a time)
 
 ``` shell
 git clone --depth=1 https://github.com/simsapa/simsapa.git
@@ -66,7 +144,7 @@ cd simsapa
 poetry install
 ```
 
-In the project root, enter a venv with poetry and start the app with:
+To run the app using the Python source, in the `simsapa` folder, enter a venv with poetry and start the app with:
 
 ``` shell
 poetry shell
@@ -82,6 +160,7 @@ With no arguments (just `doit` 💥), the default task is `update_build_open`, w
 In the project root folder:
 
 ``` shell
+poetry shell
 doit
 ```
 
@@ -89,7 +168,9 @@ On success, the `dist/` folder should open. Double click on the `.dmg` file, dra
 
 ## Windows Setup
 
-### Install Python 3.11
+### Development Tools
+
+Install Python 3.11
 
 Download the [Python 3.11 Windows Installer](https://www.python.org/downloads/release/python-3111/), use the link marked **Recommended** at the bottom of the page.
 
@@ -108,7 +189,17 @@ python --version
 Python 3.11.0
 ```
 
-### Install Poetry
+Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
+
+``` shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Type "1" to proceed with installation.
+
+Install [Node](https://nodejs.org/en/download) (stable) with the Windows installer.
+
+Install Poetry
 
 Open a terminal:
 
@@ -118,26 +209,36 @@ python -m pip install poetry
 
 Test the command:
 
-```
+At this point the following commands should work:
+
+``` shell
+python3 --version
 poetry --version
-Poetry (version 1.2.2)
+rustup show
+node --version
 ```
 
-### Download the Simsapa sources
+Install the [sindresorhus/create-dmg](https://github.com/sindresorhus/create-dmg) tool
 
-Git clone the simsapa repo, or click the green `[Code]` button and select `Download ZIP`.
-
-Open a **cmd.exe** terminal, install the python libraries:
-
+``` shell
+npm install --global create-dmg
 ```
+
+### Clone and Run Simsapa
+
+Clone the Simsapa repo and install Python packages.
+
+``` shell
+git clone --depth=1 https://github.com/simsapa/simsapa.git
+cd simsapa
 poetry install
 ```
 
-Activate the python virtual environment with poetry, and start Simsapa:
+In the project root, enter a venv with poetry and start the app with:
 
-```
+``` shell
 poetry shell
-python run.py
+python3 run.py
 ```
 
 ## .env
