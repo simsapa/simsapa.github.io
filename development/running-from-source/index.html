@@ -579,6 +579,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Linux Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-run-simsapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Run Simsapa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -590,6 +614,24 @@
   
     <nav class="md-nav" aria-label="MacOS Setup">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-tools_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-run-simsapa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Run Simsapa
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#build-the-dmg" class="md-nav__link">
@@ -616,27 +658,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-python-311" class="md-nav__link">
+  <a href="#development-tools_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Python 3.11
+      Development Tools
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-poetry" class="md-nav__link">
+  <a href="#clone-and-run-simsapa_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Poetry
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#download-the-simsapa-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download the Simsapa sources
+      Clone and Run Simsapa
     </span>
   </a>
   
@@ -735,6 +768,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Linux Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-run-simsapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Run Simsapa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -746,6 +803,24 @@
   
     <nav class="md-nav" aria-label="MacOS Setup">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-tools_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-run-simsapa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Run Simsapa
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#build-the-dmg" class="md-nav__link">
@@ -772,27 +847,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-python-311" class="md-nav__link">
+  <a href="#development-tools_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Python 3.11
+      Development Tools
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-poetry" class="md-nav__link">
+  <a href="#clone-and-run-simsapa_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Poetry
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#download-the-simsapa-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download the Simsapa sources
+      Clone and Run Simsapa
     </span>
   </a>
   
@@ -838,17 +904,33 @@
 
 <h1 id="development-running-from-source">Development: Running from Source</h1>
 <h2 id="linux-setup">Linux Setup</h2>
-<ul>
-<li>Install Python 3.11</li>
-<li>Install <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable channel)</li>
-</ul>
+<h3 id="development-tools">Development Tools</h3>
+<p>Install Python 3.11 (possibly with your distro's pacakge manager)</p>
+<p>Install <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable channel)</p>
 <pre><code class="language-shell">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 </code></pre>
-<ul>
-<li>Install <a href="https://python-poetry.org/docs/">Poetry</a></li>
-</ul>
+<p>Type "1" to proceed with installation.</p>
+<p>Install <a href="https://github.com/nvm-sh/nvm">NVM (Node Version Manager)</a></p>
+<pre><code class="language-shell">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+</code></pre>
+<p><strong>Close the terminal</strong> and open a new one to reload the environment variables.</p>
+<p>Install Node (stable)</p>
+<pre><code class="language-shell">nvm install stable
+</code></pre>
+<p>Install <a href="https://python-poetry.org/docs/">Poetry</a></p>
 <pre><code class="language-shell">pipx install poetry
 </code></pre>
+<p>(On your system it could be <code>pip</code>, <code>pip3</code> or <code>pipx</code>)</p>
+<p>At this point the following commands should work:</p>
+<pre><code class="language-shell">python3 --version
+poetry --version
+rustup show
+node --version
+</code></pre>
+<p>Install the <a href="https://github.com/sindresorhus/create-dmg">sindresorhus/create-dmg</a> tool</p>
+<pre><code class="language-shell">npm install --global create-dmg
+</code></pre>
+<h3 id="clone-and-run-simsapa">Clone and Run Simsapa</h3>
 <p>Clone the Simsapa repo and install Python packages.</p>
 <pre><code class="language-shell">git clone --depth=1 https://github.com/simsapa/simsapa.git
 cd simsapa
@@ -859,33 +941,46 @@ poetry install
 python3 run.py
 </code></pre>
 <h2 id="macos-setup">MacOS Setup</h2>
-<ul>
-<li>Download XCode from the App Store</li>
-<li>Install <a href="https://brew.sh/">Homebrew</a></li>
-</ul>
+<h3 id="development-tools_1">Development Tools</h3>
+<p>Download XCode from the App Store.</p>
+<p>Install <a href="https://brew.sh/">Homebrew</a></p>
 <pre><code class="language-shell">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
 </code></pre>
-<ul>
-<li>Install Python 3.11</li>
-</ul>
+<p>When the command finishes, it prints the commands to add Homebrew to your PATH under "Next steps".</p>
+<p>Install Python 3.11</p>
 <pre><code class="language-shell">brew install python@3.11
 </code></pre>
-<ul>
-<li>Install Rust (stable channel)</li>
-</ul>
+<p>Install <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable channel)</p>
 <pre><code class="language-shell">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 </code></pre>
-<ul>
-<li>Install <a href="https://python-poetry.org/docs/">Poetry</a></li>
-</ul>
-<pre><code class="language-shell">pipx install poetry
+<p>Type "1" to proceed with installation.</p>
+<p>Install <a href="https://github.com/nvm-sh/nvm">NVM (Node Version Manager)</a></p>
+<pre><code class="language-shell">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 </code></pre>
+<p><strong>Close the terminal</strong> and open a new one to reload the environment variables.</p>
+<p>Install Node (stable)</p>
+<pre><code class="language-shell">nvm install stable
+</code></pre>
+<p>Install <a href="https://python-poetry.org/docs/">Poetry</a></p>
+<pre><code class="language-shell">pip3 install poetry
+</code></pre>
+<p>At this point the following commands should work:</p>
+<pre><code class="language-shell">python3 --version
+poetry --version
+rustup show
+node --version
+</code></pre>
+<p>Install the <a href="https://github.com/sindresorhus/create-dmg">sindresorhus/create-dmg</a> tool</p>
+<pre><code class="language-shell">npm install --global create-dmg
+</code></pre>
+<h3 id="clone-and-run-simsapa_1">Clone and Run Simsapa</h3>
 <p>Clone the Simsapa repo and install Python packages.</p>
+<p>(Commands one line at a time)</p>
 <pre><code class="language-shell">git clone --depth=1 https://github.com/simsapa/simsapa.git
 cd simsapa
 poetry install
 </code></pre>
-<p>In the project root, enter a venv with poetry and start the app with:</p>
+<p>To run the app using the Python source, in the <code>simsapa</code> folder, enter a venv with poetry and start the app with:</p>
 <pre><code class="language-shell">poetry shell
 python3 run.py
 </code></pre>
@@ -893,11 +988,13 @@ python3 run.py
 <p>The repo uses the <a href="https://pydoit.org/">pydoit</a> task runner.</p>
 <p>With no arguments (just <code>doit</code> 💥), the default task is <code>update_build_open</code>, which updates the repo, installs libs, builds the app, and opens the <code>dist/</code> folder. <code>doit list</code> shows the available tasks.</p>
 <p>In the project root folder:</p>
-<pre><code class="language-shell">doit
+<pre><code class="language-shell">poetry shell
+doit
 </code></pre>
 <p>On success, the <code>dist/</code> folder should open. Double click on the <code>.dmg</code> file, drag the icon to Applications.</p>
 <h2 id="windows-setup">Windows Setup</h2>
-<h3 id="install-python-311">Install Python 3.11</h3>
+<h3 id="development-tools_2">Development Tools</h3>
+<p>Install Python 3.11</p>
 <p>Download the <a href="https://www.python.org/downloads/release/python-3111/">Python 3.11 Windows Installer</a>, use the link marked <strong>Recommended</strong> at the bottom of the page.</p>
 <p>Make sure to check <strong>Add Python 3.11 to PATH</strong>.</p>
 <p><img alt="Windows Install Python" src="/images/windows-install-python-3-11.png" /></p>
@@ -907,22 +1004,34 @@ python3 run.py
 <pre><code>python --version
 Python 3.11.0
 </code></pre>
-<h3 id="install-poetry">Install Poetry</h3>
+<p>Install <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable channel)</p>
+<pre><code class="language-shell">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+</code></pre>
+<p>Type "1" to proceed with installation.</p>
+<p>Install <a href="https://nodejs.org/en/download">Node</a> (stable) with the Windows installer.</p>
+<p>Install Poetry</p>
 <p>Open a terminal:</p>
 <pre><code>python -m pip install poetry
 </code></pre>
 <p>Test the command:</p>
-<pre><code>poetry --version
-Poetry (version 1.2.2)
+<p>At this point the following commands should work:</p>
+<pre><code class="language-shell">python3 --version
+poetry --version
+rustup show
+node --version
 </code></pre>
-<h3 id="download-the-simsapa-sources">Download the Simsapa sources</h3>
-<p>Git clone the simsapa repo, or click the green <code>[Code]</code> button and select <code>Download ZIP</code>.</p>
-<p>Open a <strong>cmd.exe</strong> terminal, install the python libraries:</p>
-<pre><code>poetry install
+<p>Install the <a href="https://github.com/sindresorhus/create-dmg">sindresorhus/create-dmg</a> tool</p>
+<pre><code class="language-shell">npm install --global create-dmg
 </code></pre>
-<p>Activate the python virtual environment with poetry, and start Simsapa:</p>
-<pre><code>poetry shell
-python run.py
+<h3 id="clone-and-run-simsapa_2">Clone and Run Simsapa</h3>
+<p>Clone the Simsapa repo and install Python packages.</p>
+<pre><code class="language-shell">git clone --depth=1 https://github.com/simsapa/simsapa.git
+cd simsapa
+poetry install
+</code></pre>
+<p>In the project root, enter a venv with poetry and start the app with:</p>
+<pre><code class="language-shell">poetry shell
+python3 run.py
 </code></pre>
 <h2 id="env">.env</h2>
 <p>Environment variables can be set with a <code>.env</code> file is in the project root.</p>
