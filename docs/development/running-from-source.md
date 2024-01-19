@@ -14,20 +14,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Type "1" to proceed with installation.
 
-Install [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
-
-``` shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-```
-
-**Close the terminal** and open a new one to reload the environment variables.
-
-Install Node (stable)
-
-``` shell
-nvm install stable
-```
-
 Install [Poetry](https://python-poetry.org/docs/)
 
 ``` shell
@@ -42,13 +28,6 @@ At this point the following commands should work:
 python3 --version
 poetry --version
 rustup show
-node --version
-```
-
-Install the [sindresorhus/create-dmg](https://github.com/sindresorhus/create-dmg) tool
-
-``` shell
-npm install --global create-dmg
 ```
 
 ### Clone and Run Simsapa
@@ -197,8 +176,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Type "1" to proceed with installation.
 
-Install [Node](https://nodejs.org/en/download) (stable) with the Windows installer.
-
 Install Poetry
 
 Open a terminal:
@@ -215,13 +192,6 @@ At this point the following commands should work:
 python3 --version
 poetry --version
 rustup show
-node --version
-```
-
-Install the [sindresorhus/create-dmg](https://github.com/sindresorhus/create-dmg) tool
-
-``` shell
-npm install --global create-dmg
 ```
 
 ### Clone and Run Simsapa

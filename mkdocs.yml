@@ -13,6 +13,8 @@ nav:
   - Features:
     - "Dhamma Texts": features/dhamma-texts.md
     - "Search Queries": features/search-queries.md
+  - Troubleshooting:
+    - "Linux": troubleshooting/linux.md
   - Development:
     - "Running from Source": development/running-from-source.md
     - "Manual Database Setup": development/manual-database-setup.md
