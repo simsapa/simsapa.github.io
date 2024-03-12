@@ -14,7 +14,7 @@
         <link rel="prev" href="../dhamma-texts/">
       
       
-        <link rel="next" href="../../troubleshooting/linux/">
+        <link rel="next" href="../localhost-api/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -351,6 +351,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../install/chromeos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChromeOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser and Editor Plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../install/portable-use/" class="md-nav__link">
         
   
@@ -431,6 +473,27 @@
             Features
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../app-windows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -556,6 +619,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../localhost-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Localhost API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -601,6 +685,27 @@
             Troubleshooting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/low-memory-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Low Memory Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -803,13 +908,16 @@
 
 <h1 id="search-queries">Search Queries</h1>
 <h2 id="search-modes-in-brief">Search Modes in Brief</h2>
-<p>Sutta references are matched first. Typing 'mn8', 'sn 56.11', 'iti92' will list those suttas.</p>
+<p>Sutta references are matched first. Typing <strong>mn8</strong>, <strong>sn 56.11</strong>, <strong>iti92</strong> will list those suttas.</p>
 <p><strong>Fulltext Match:</strong> it searches the content for keywords using the query expressions, non-accented letters matching accented ones. (I.e. it makes a query in the tantivy fulltext index and assigns scores to the results.)</p>
 <!--
 Fulltext search is faster and more flexible than the Exact Match (SQL) search, but yields many partial matches.
 -->
 
 <p>Fulltext search matches words in full, not in part, e.g. 'bodhi' will not match 'bodhisatta', but words are stemmed and will match declensions, e.g. 'bodhiṁ / bodhiyā'.</p>
+<p>Searching with a single Pāli word will return results which include the inflected forms, the results ranked by the frequency of the term.</p>
+<p>When searching for an exact text, use two or three words wrapped in double quotes, e.g.
+<strong>"amatogadhā sabbe dhammā"</strong> (including the quote marks).</p>
 <!--
 **Exact Match:** it searches the content for exact matches. (I.e. it makes SQL queries with **%query text%**.)
 

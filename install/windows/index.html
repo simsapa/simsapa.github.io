@@ -318,17 +318,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Windows
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -338,34 +327,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fix-audio-playback-dll-file-name-bug" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix Audio Playback (.dll file name bug)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -384,6 +345,48 @@
   
   <span class="md-ellipsis">
     Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chromeos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChromeOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser and Editor Plugins
   </span>
   
 
@@ -488,6 +491,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../features/app-windows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../features/dhamma-texts/" class="md-nav__link">
         
   
@@ -514,6 +538,27 @@
   
   <span class="md-ellipsis">
     Search Queries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/localhost-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Localhost API
   </span>
   
 
@@ -568,6 +613,27 @@
             Troubleshooting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/low-memory-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Low Memory Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -705,23 +771,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fix-audio-playback-dll-file-name-bug" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fix Audio Playback (.dll file name bug)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -740,12 +789,14 @@
 
 <p>Download the latest Windows <code>.zip</code> from <a href="https://github.com/simsapa/simsapa/releases/">Releases</a>.</p>
 <p>Extract and move the folder, for example to <code>C:\</code>.</p>
-<p>The <code>Simsapa Dhamma Reader.exe</code> starts the application.</p>
-<p>Create a desktop shortcut to the .exe with <strong>Alt+Drag</strong>*.</p>
-<h2 id="fix-audio-playback-dll-file-name-bug">Fix Audio Playback (.dll file name bug)</h2>
-<p>The Qt audio playback has a bug which expects the wrong .dll filename on Windows, it can be fixed as shown below.</p>
-<p><a href="https://stackoverflow.com/questions/74500509/failed-to-setup-resampler-when-starting-qaudiosink">"Failed to setup resampler" when starting QAudioSink</a></p>
-<iframe width="750" height="420" src="https://www.youtube.com/embed/KwivBJhwUnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>The <code>Simsapa Dhamma Reader.exe</code> starts the application. When running it the first time, it offers to download the database.</p>
+<p>To create a desktop shortcut:</p>
+<ul>
+<li>Select the .exe</li>
+<li>Holding <strong>Ctrl+Shift</strong> or <strong>Alt</strong> key, drag it to the desktop. While dragging, it should say "Creating link to ..." rather than moving the .exe file.</li>
+</ul>
+<p>The application notifies you when there is a new version available.</p>
+<p>To upgrade, simply delete the old Simsapa folder, download a new .zip, extract and move it to the same location.</p>
 
 
 

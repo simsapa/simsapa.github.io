@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://simsapa.github.io/troubleshooting/linux/">
       
       
-        <link rel="prev" href="../../features/search-queries/">
+        <link rel="prev" href="../low-memory-mode/">
       
       
         <link rel="next" href="../../development/running-from-source/">
@@ -351,6 +351,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../install/chromeos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChromeOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser and Editor Plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../install/portable-use/" class="md-nav__link">
         
   
@@ -439,6 +481,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../features/app-windows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../features/dhamma-texts/" class="md-nav__link">
         
   
@@ -465,6 +528,27 @@
   
   <span class="md-ellipsis">
     Search Queries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/localhost-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Localhost API
   </span>
   
 
@@ -524,6 +608,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../low-memory-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Low Memory Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -573,9 +678,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#app-starts-but-html-content-pages-are-blank" class="md-nav__link">
+    <span class="md-ellipsis">
+      App starts, but HTML content pages are blank
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#could-not-load-the-qt-platform-plugin-xcb-in-even-though-it-was-found" class="md-nav__link">
     <span class="md-ellipsis">
       Could not load the Qt platform plugin "xcb" in "" even though it was found
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-wayland-connection-broke-did-the-wayland-compositor-die" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Wayland connection broke. Did the Wayland compositor die?
     </span>
   </a>
   
@@ -712,9 +835,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#app-starts-but-html-content-pages-are-blank" class="md-nav__link">
+    <span class="md-ellipsis">
+      App starts, but HTML content pages are blank
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#could-not-load-the-qt-platform-plugin-xcb-in-even-though-it-was-found" class="md-nav__link">
     <span class="md-ellipsis">
       Could not load the Qt platform plugin "xcb" in "" even though it was found
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-wayland-connection-broke-did-the-wayland-compositor-die" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Wayland connection broke. Did the Wayland compositor die?
     </span>
   </a>
   
@@ -736,9 +877,27 @@
 
 
 <h1 id="linux">Linux</h1>
+<h2 id="app-starts-but-html-content-pages-are-blank">App starts, but HTML content pages are blank</h2>
+<p>Start Simsapa with the following env variable:</p>
+<pre><code class="language-shell">QTWEBENGINE_DISABLE_SANDBOX=1 ./Simsapa_Dhamma_Reader-0.2.0a1-x86_64.AppImage
+</code></pre>
 <h2 id="could-not-load-the-qt-platform-plugin-xcb-in-even-though-it-was-found">Could not load the Qt platform plugin "xcb" in "" even though it was found</h2>
 <p>Install <code>libxcb</code>:</p>
 <pre><code>sudo apt install libxcb-cursor0
+</code></pre>
+<h2 id="the-wayland-connection-broke-did-the-wayland-compositor-die">The Wayland connection broke. Did the Wayland compositor die?</h2>
+<p>Open the app launcher file:</p>
+<pre><code class="language-shell">gedit ~/.local/share/applications/simsapa.desktop
+</code></pre>
+<p>On the <code>Exec</code> line insert <code>QT_QPA_PLATFORM=xcb</code> before the AppImage path, see the example below.</p>
+<p>(📙 NOTE: replace <strong>/path/to/</strong> with the actual path and the app filename to the correct version)</p>
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Simsapa
+Icon=simsapa
+Terminal=false
+Type=Application
+Exec=env QTWEBENGINE_DISABLE_SANDBOX=1 QT_QPA_PLATFORM=xcb /path/to/Simsapa_Dhamma_Reader-0.5.0a1-x86_64.AppImage
 </code></pre>
 
 
