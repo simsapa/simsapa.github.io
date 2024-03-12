@@ -22,6 +22,7 @@
 - `PTS` The Pali Text Society's Pali-English dictionary [dsal.uchicago.edu](https://dsal.uchicago.edu/dictionaries/pali/)
 - `NCPED` [suttacentral.net](https://discourse.suttacentral.net/t/implementing-the-new-concise-pali-english-dictionary/3413) New Concise Pali English Dictionary by Ven. Buddhadatta
 - `CPD` Critical Pāli Dictionary [cpd.uni-koeln.de](https://cpd.uni-koeln.de/)
+- `COMM` Pāli commentary definitions of terms in Vinaya, late Khuddaka Nikāya, Aṭṭhakathā, Ṭīkā and Aññā.
 - `SBS-RU` Pali-Russian dictionary by Ven. Devamitta [devamitta.github.io](https://devamitta.github.io/pali/pali_dict.html)
 - `MW` Monier-Williams Sanskrit-English Dictionary, 1899 [sanskrit-lexicon.uni-koeln.de](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc2/index.php)
 - `Whitney` Whitney's Roots [sanskritlibrary.org](https://sanskritlibrary.org/Sanskrit/whitney/index2.html)

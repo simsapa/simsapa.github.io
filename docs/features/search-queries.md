@@ -2,7 +2,7 @@
 
 ## Search Modes in Brief
 
-Sutta references are matched first. Typing 'mn8', 'sn 56.11', 'iti92' will list those suttas.
+Sutta references are matched first. Typing **mn8**, **sn 56.11**, **iti92** will list those suttas.
 
 **Fulltext Match:** it searches the content for keywords using the query expressions, non-accented letters matching accented ones. (I.e. it makes a query in the tantivy fulltext index and assigns scores to the results.)
 
@@ -11,6 +11,11 @@ Fulltext search is faster and more flexible than the Exact Match (SQL) search, b
 -->
 
 Fulltext search matches words in full, not in part, e.g. 'bodhi' will not match 'bodhisatta', but words are stemmed and will match declensions, e.g. 'bodhiṁ / bodhiyā'.
+
+Searching with a single Pāli word will return results which include the inflected forms, the results ranked by the frequency of the term.
+
+When searching for an exact text, use two or three words wrapped in double quotes, e.g.
+**"amatogadhā sabbe dhammā"** (including the quote marks).
 
 <!--
 **Exact Match:** it searches the content for exact matches. (I.e. it makes SQL queries with **%query text%**.)

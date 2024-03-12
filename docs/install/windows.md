@@ -6,14 +6,14 @@ Download the latest Windows `.zip` from [Releases](https://github.com/simsapa/si
 
 Extract and move the folder, for example to `C:\`.
 
-The `Simsapa Dhamma Reader.exe` starts the application.
+The `Simsapa Dhamma Reader.exe` starts the application. When running it the first time, it offers to download the database.
 
-Create a desktop shortcut to the .exe with **Alt+Drag***.
+To create a desktop shortcut:
 
-## Fix Audio Playback (.dll file name bug)
+- Select the .exe
+- Holding **Ctrl+Shift** or **Alt** key, drag it to the desktop. While dragging, it should say "Creating link to ..." rather than moving the .exe file.
 
-The Qt audio playback has a bug which expects the wrong .dll filename on Windows, it can be fixed as shown below.
+The application notifies you when there is a new version available.
 
-["Failed to setup resampler" when starting QAudioSink](https://stackoverflow.com/questions/74500509/failed-to-setup-resampler-when-starting-qaudiosink)
+To upgrade, simply delete the old Simsapa folder, download a new .zip, extract and move it to the same location.
 
-<iframe width="750" height="420" src="https://www.youtube.com/embed/KwivBJhwUnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

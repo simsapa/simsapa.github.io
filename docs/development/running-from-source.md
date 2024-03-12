@@ -155,11 +155,11 @@ Download the [Python 3.11 Windows Installer](https://www.python.org/downloads/re
 
 Make sure to check **Add Python 3.11 to PATH**.
 
-![Windows Install Python](/images/windows-install-python-3-11.png)
+![Windows Install Python](../images/windows-install-python-3-11.png)
 
 It is recommended to allow **Disable path length limit**.
 
-![Windows Python Finished](/images/windows-python-finished.png)
+![Windows Python Finished](../images/windows-python-finished.png)
 
 Open a **cmd.exe** terminal to test:
 
