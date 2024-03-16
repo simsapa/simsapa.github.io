@@ -12,10 +12,14 @@ Fulltext search is faster and more flexible than the Exact Match (SQL) search, b
 
 Fulltext search matches words in full, not in part, e.g. 'bodhi' will not match 'bodhisatta', but words are stemmed and will match declensions, e.g. 'bodhiṁ / bodhiyā'.
 
-Searching with a single Pāli word will return results which include the inflected forms, the results ranked by the frequency of the term.
+Searching with a single Pāli word will return results which **include the inflected forms**, the results ranked by the frequency of the term.
 
 When searching for an exact text, use two or three words wrapped in double quotes, e.g.
 **"amatogadhā sabbe dhammā"** (including the quote marks).
+
+Prefixing the word with the '+' sign means a term must be included, the '-' signs means it must be excluded.
+
+**bhikkhu +kamma -vipaka** means should include 'bhikkhu', must include 'kamma', must exclude 'vipaka'.
 
 <!--
 **Exact Match:** it searches the content for exact matches. (I.e. it makes SQL queries with **%query text%**.)

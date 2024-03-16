@@ -1,5 +1,7 @@
 # Browser and Editor Plugins
 
+<iframe width="750" height="420" src="https://www.youtube.com/embed/n3KSAppr9wc" title="Simsapa: How to Install Extensions and Plugins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Github: [simsapa/simsapa-extensions-and-plugins](https://github.com/simsapa/simsapa-extensions-and-plugins)
 
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/simsapa/)
