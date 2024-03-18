@@ -8,17 +8,23 @@ Extract and open the `.dmg` file.
 
 Drag the Simsapa icon to Applications.
 
+When starting the app, you will see a warning:
+
+<img alt="MacOS Cannot be Opened" src="/images/macos-simsapa-cannot-be-opened-screenshot.png">
+
 **Allow apps from third-party locations:**
 
 Open System Preferences > Security & Privacy > General tab
+
+<img alt="MacOS Security and Privacy" src="/images/macos-privacy-open-anyway-screenshot.png">
 
 Click on the lock icon in the bottom left and enter your admin password.
 
 Next to the message `"Simsapa" was blocked because...`, click `Open Anyway`.
 
-<img alt="MacOS Alert Unsigned" width="450" src="/images/macos-catalina-alert-unsigned.jpg">
+Starting the app with the icon will ask again:
 
-<img alt="MacOS Open Anyway" width="450" src="/images/Mac-OS-Open-Anyway.jpg">
+<img alt="MacOS Simsapa Cannot Verify" src="/images/macos-simsapa-cannot-verify-screenshot.png">
 
 ## References
 

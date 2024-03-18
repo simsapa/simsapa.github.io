@@ -16,14 +16,14 @@ You need at least three files:
 
 Move and extract these in the app's data folder, which is:
 
-- MacOS: `~/Library/Application\ Support/simsapa/simsapa`
+- MacOS: `~/Library/Application\ Support/simsapa`
 - Windows: `C:\Users\%USERNAME%\AppData\Local\simsapa\simsapa`
 - Linux: `~/.local/share/simsapa`
 
 For example:
 
 ```
-cd ~/Library/Application\ Support/simsapa/simsapa
+cd ~/Library/Application\ Support/simsapa
 ls
 assets/  log.txt
 
