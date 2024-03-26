@@ -16,6 +16,12 @@ Install `libxcb`:
 sudo apt install libxcb-cursor0
 ```
 
+## Failed to load module 'xapp-gtk3-module'
+
+```
+sudo apt install xapp
+```
+
 ## The Wayland connection broke. Did the Wayland compositor die?
 
 Open the app launcher file:
