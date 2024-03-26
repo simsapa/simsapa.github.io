@@ -19,7 +19,7 @@ sudo apt install libxcb-cursor0
 ## Failed to load module 'xapp-gtk3-module'
 
 ```
-sudo apt install xapp
+sudo apt install libxapp1
 ```
 
 ## The Wayland connection broke. Did the Wayland compositor die?
