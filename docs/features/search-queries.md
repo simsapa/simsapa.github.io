@@ -58,30 +58,64 @@ The query can match parts of the document:
 - **calmness +source:thanissaro** - match 'calmness' in the content, only in documents by Bh. Thanissaro
 - **+"buddhas of the past" +source:bodhi** - must include the phrase 'buddhas of the past', only in documents by Bh. Bodhi
 
-#### Regex search (.* icon)
-
-This option will parse the query as a regex pattern, but limited to globbing expressions, such as: `.* .+ a* a+`
-
-The `.` (dot) matches any single character, `*` (asterisk) means 'zero or more' or the previous character, `+` (plus) means 'one or more'.
-
-- **a\*vitak.\*** - the word start with zero or more of 'a', followed by 'vitak', followed by zero or more characters
-- **.\*vitak.\*** - match any word containing 'vitak'
-- **vitak.\*** - match starting with 'vitak'
-
-#### Fuzzy search (~ icon)
+#### Fulltext with fuzzy search (~ icon)
 
 This option allows matching words which may differ from the query by N number of characters (i.e. the [Levenshtein Distance](https://devopedia.org/levenshtein-distance)).
 
 Fuzzy search is not availble together with regex patterns.
 
-<!--
+## Contains Match
 
-## Exact Match Queries
+[Slides PDF](../pdf/simsapa-search-modes.pdf)
 
-Joining terms with **AND** creates filtered SQL queries.
+<iframe width="750" height="420" src="https://www.youtube.com/embed/uSFKTfKvyQE" title="Simsapa Search Modes: Contains and RegEx Match (v0.5.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**kamma vipāka**: will match texts which contain the exact expression 'kamma vipāka' (including the space).
+If any part of the text contains the query exactly, it matches.
 
-**kamma AND vipāka**: will match texts which contain both 'kamma' and 'vipāka', anywhere in the text (including 'kammavipāka').
+**bodhi** will match the ‘bodhi’ part in **bodhisatta**.
 
--->
+**dukkha** will match the ‘dukkha’ part in **dukkhassa**,
+but will not match **dukkho**.
+
+**dukkh** will match **dukkho**, since it contains ‘dukkh’.
+
+The query is executed as an SQL `%query%` expression.
+
+## RegEx Match
+
+If part of the text satisfies the query as a regular expression pattern, it matches.
+
+To improve the time of RegEx queries, select a **Language** and **Source** filter,
+so that not all database records are scanned for matches.
+
+## Limitations
+
+Stemming and accent folding happens only in **Fulltext Match**.
+
+**Contains Match** and **RegEx Match** queries are used in the exact form given.
+
+This means they don't stem Pāli words and don't fold accents.
+
+**bodhiya** will not match **bodhi** or **bodhiyā**.
+
+**Search As You Type** is disabled for these modes.
+
+Press Enter or click the search button to run the query.
+
+## AND Expressions
+
+The search query is split on **AND** (must be uppercase).
+This combines each expression as a filter.
+
+Examples:
+
+**dukkha AND sukha** "Contains Match" means a text has to match:
+
+- `%dukkha%` first, and then also
+- `%sukha%`
+
+`dukkha AND sukh\w+` "RegEx Match" means a text has to match:
+
+- `dukkha` first, and then also
+- `sukh\w+`
+

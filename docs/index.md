@@ -16,6 +16,10 @@ A short feature demo:
 
 <iframe width="750" height="420" src="https://www.youtube.com/embed/XFSHOBm9tT0" title="Simsapa Dhamma Reader: Feature Demo (v0.5.0-alpha.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+[Slides PDF](pdf/simsapa-search-modes.pdf)
+
+<iframe width="750" height="420" src="https://www.youtube.com/embed/uSFKTfKvyQE" title="Simsapa Search Modes: Contains and RegEx Match (v0.5.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Screenshots
 
 See also: [App Windows](features/app-windows.md)
