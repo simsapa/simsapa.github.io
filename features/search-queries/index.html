@@ -588,18 +588,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regex-search-icon" class="md-nav__link">
+  <a href="#fulltext-with-fuzzy-search-icon" class="md-nav__link">
     <span class="md-ellipsis">
-      Regex search (.* icon)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fuzzy-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fuzzy search (~ icon)
+      Fulltext with fuzzy search (~ icon)
     </span>
   </a>
   
@@ -607,6 +598,42 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contains-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contains Match
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regex-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegEx Match
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Expressions
+    </span>
+  </a>
   
 </li>
       
@@ -869,18 +896,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regex-search-icon" class="md-nav__link">
+  <a href="#fulltext-with-fuzzy-search-icon" class="md-nav__link">
     <span class="md-ellipsis">
-      Regex search (.* icon)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fuzzy-search-icon" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fuzzy search (~ icon)
+      Fulltext with fuzzy search (~ icon)
     </span>
   </a>
   
@@ -888,6 +906,42 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contains-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contains Match
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regex-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegEx Match
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Expressions
+    </span>
+  </a>
   
 </li>
       
@@ -949,28 +1003,44 @@ Exact Match (via SQL) matches in part, i.e. if the query is exactly contained so
 <li><strong>calmness +source:thanissaro</strong> - match 'calmness' in the content, only in documents by Bh. Thanissaro</li>
 <li><strong>+"buddhas of the past" +source:bodhi</strong> - must include the phrase 'buddhas of the past', only in documents by Bh. Bodhi</li>
 </ul>
-<h4 id="regex-search-icon">Regex search (.* icon)</h4>
-<p>This option will parse the query as a regex pattern, but limited to globbing expressions, such as: <code>.* .+ a* a+</code></p>
-<p>The <code>.</code> (dot) matches any single character, <code>*</code> (asterisk) means 'zero or more' or the previous character, <code>+</code> (plus) means 'one or more'.</p>
-<ul>
-<li><strong>a*vitak.*</strong> - the word start with zero or more of 'a', followed by 'vitak', followed by zero or more characters</li>
-<li><strong>.*vitak.*</strong> - match any word containing 'vitak'</li>
-<li><strong>vitak.*</strong> - match starting with 'vitak'</li>
-</ul>
-<h4 id="fuzzy-search-icon">Fuzzy search (~ icon)</h4>
+<h4 id="fulltext-with-fuzzy-search-icon">Fulltext with fuzzy search (~ icon)</h4>
 <p>This option allows matching words which may differ from the query by N number of characters (i.e. the <a href="https://devopedia.org/levenshtein-distance">Levenshtein Distance</a>).</p>
 <p>Fuzzy search is not availble together with regex patterns.</p>
-<!--
+<h2 id="contains-match">Contains Match</h2>
+<p><a href="../../pdf/simsapa-search-modes.pdf">Slides PDF</a></p>
+<iframe width="750" height="420" src="https://www.youtube.com/embed/uSFKTfKvyQE" title="Simsapa Search Modes: Contains and RegEx Match (v0.5.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Exact Match Queries
-
-Joining terms with **AND** creates filtered SQL queries.
-
-**kamma vipāka**: will match texts which contain the exact expression 'kamma vipāka' (including the space).
-
-**kamma AND vipāka**: will match texts which contain both 'kamma' and 'vipāka', anywhere in the text (including 'kammavipāka').
-
--->
+<p>If any part of the text contains the query exactly, it matches.</p>
+<p><strong>bodhi</strong> will match the ‘bodhi’ part in <strong>bodhisatta</strong>.</p>
+<p><strong>dukkha</strong> will match the ‘dukkha’ part in <strong>dukkhassa</strong>,
+but will not match <strong>dukkho</strong>.</p>
+<p><strong>dukkh</strong> will match <strong>dukkho</strong>, since it contains ‘dukkh’.</p>
+<p>The query is executed as an SQL <code>%query%</code> expression.</p>
+<h2 id="regex-match">RegEx Match</h2>
+<p>If part of the text satisfies the query as a regular expression pattern, it matches.</p>
+<p>To improve the time of RegEx queries, select a <strong>Language</strong> and <strong>Source</strong> filter,
+so that not all database records are scanned for matches.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Stemming and accent folding happens only in <strong>Fulltext Match</strong>.</p>
+<p><strong>Contains Match</strong> and <strong>RegEx Match</strong> queries are used in the exact form given.</p>
+<p>This means they don't stem Pāli words and don't fold accents.</p>
+<p><strong>bodhiya</strong> will not match <strong>bodhi</strong> or <strong>bodhiyā</strong>.</p>
+<p><strong>Search As You Type</strong> is disabled for these modes.</p>
+<p>Press Enter or click the search button to run the query.</p>
+<h2 id="and-expressions">AND Expressions</h2>
+<p>The search query is split on <strong>AND</strong> (must be uppercase).
+This combines each expression as a filter.</p>
+<p>Examples:</p>
+<p><strong>dukkha AND sukha</strong> "Contains Match" means a text has to match:</p>
+<ul>
+<li><code>%dukkha%</code> first, and then also</li>
+<li><code>%sukha%</code></li>
+</ul>
+<p><code>dukkha AND sukh\w+</code> "RegEx Match" means a text has to match:</p>
+<ul>
+<li><code>dukkha</code> first, and then also</li>
+<li><code>sukh\w+</code></li>
+</ul>
 
 
 
