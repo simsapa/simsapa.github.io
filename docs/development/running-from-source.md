@@ -4,6 +4,12 @@
 
 ### Development Tools
 
+First, basic build tooling:
+
+``` shell
+sudo apt install build-essential
+```
+
 Install Python 3.11 (possibly with your distro's pacakge manager)
 
 Install [Rust](https://www.rust-lang.org/tools/install) (stable channel)
@@ -14,10 +20,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Type "1" to proceed with installation.
 
-Install [Poetry](https://python-poetry.org/docs/)
+Install [Poetry](https://python-poetry.org/docs/) and its `shell` plugin.
 
 ``` shell
 pipx install poetry
+poetry self add poetry-plugin-shell
 ```
 
 (On your system it could be `pip`, `pip3` or `pipx`)
@@ -37,9 +44,8 @@ Clone the Simsapa repo and install Python packages.
 ``` shell
 git clone --depth=1 https://github.com/simsapa/simsapa.git
 cd simsapa
-poetry install
 poetry env use python3.11
-poetry self add poetry-plugin-shell
+poetry install
 ```
 
 In the project root, enter a venv with poetry and start the app with:
