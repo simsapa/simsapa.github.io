@@ -38,6 +38,8 @@ Clone the Simsapa repo and install Python packages.
 git clone --depth=1 https://github.com/simsapa/simsapa.git
 cd simsapa
 poetry install
+poetry env use python3.11
+poetry self add poetry-plugin-shell
 ```
 
 In the project root, enter a venv with poetry and start the app with:
