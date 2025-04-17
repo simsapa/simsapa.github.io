@@ -1077,13 +1077,17 @@
 <h1 id="development-running-from-source">Development: Running from Source</h1>
 <h2 id="linux-setup">Linux Setup</h2>
 <h3 id="development-tools">Development Tools</h3>
+<p>First, basic build tooling:</p>
+<pre><code class="language-shell">sudo apt install build-essential
+</code></pre>
 <p>Install Python 3.11 (possibly with your distro's pacakge manager)</p>
 <p>Install <a href="https://www.rust-lang.org/tools/install">Rust</a> (stable channel)</p>
 <pre><code class="language-shell">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 </code></pre>
 <p>Type "1" to proceed with installation.</p>
-<p>Install <a href="https://python-poetry.org/docs/">Poetry</a></p>
+<p>Install <a href="https://python-poetry.org/docs/">Poetry</a> and its <code>shell</code> plugin.</p>
 <pre><code class="language-shell">pipx install poetry
+poetry self add poetry-plugin-shell
 </code></pre>
 <p>(On your system it could be <code>pip</code>, <code>pip3</code> or <code>pipx</code>)</p>
 <p>At this point the following commands should work:</p>
@@ -1095,9 +1099,8 @@ rustup show
 <p>Clone the Simsapa repo and install Python packages.</p>
 <pre><code class="language-shell">git clone --depth=1 https://github.com/simsapa/simsapa.git
 cd simsapa
-poetry install
 poetry env use python3.11
-poetry self add poetry-plugin-shell
+poetry install
 </code></pre>
 <p>In the project root, enter a venv with poetry and start the app with:</p>
 <pre><code class="language-shell">poetry shell
