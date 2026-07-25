@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "simsapa-github-io-source"
+version = "0.1.0"
+description = ""
+authors = ["Gambhiro <gambhiro@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "simsapa"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
