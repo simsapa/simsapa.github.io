@@ -4,6 +4,8 @@ site_url: https://simsapa.github.io/
 
 nav:
   - Home: index.md
+  - Features:
+    - "Search Queries": features/search-queries.md
   - Privacy Policy: privacy-policy.md
 
 theme:
