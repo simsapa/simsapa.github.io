@@ -12,7 +12,10 @@ nav:
     - "Portable Use": install/portable-use.md
     - "Uninstall": install/uninstall.md
   - Features:
+    - "App Windows": features/app-windows.md
+    - "Dhamma Texts": features/dhamma-texts.md
     - "Search Queries": features/search-queries.md
+    - "CLI and Localhost API": features/cli-localhost-api.md
   - Troubleshooting:
     - "Linux": troubleshooting/linux.md
   - Privacy Policy: privacy-policy.md

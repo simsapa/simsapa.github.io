@@ -2,13 +2,13 @@
 
 A sutta reader and Pāli dictionary application. Feature highlights:
 
-- [Fulltext search](https://simsapa.github.io/features/search-queries/) with Pāli declension matching
-- Search result filtering options
-- Integrates suttas with commentaries, dictionaries and a book library
-- Line-by-line or side-by-side columns layout with multiple translations
-- Pāli text gloss analysis with export formats
+- [Fulltext search](features/search-queries.md) with Pāli declension matching
+  + Suttas, commentaries, dictionaries and a book library
+- [Search result filtering](features/app-windows.md#search-result-filtering) options
+- [Reading layout](features/app-windows.md#reading-layout-display-settings): line-by-line or side-by-side columns with multiple translations
+- [Pāli text gloss analysis](features/app-windows.md#gloss-tab) with export formats
 - [Extensions and plugins](https://github.com/simsapa/simsapa-extensions-and-plugins) for browsers and note taking app
-- Command line interface (`@simsapa/cli` npm package) for humans and AI agents
+- [Command line interface](features/cli-localhost-api.md) (`@simsapa/cli` npm package) for humans and AI agents
 
 Download from the [Releases](https://github.com/simsapa/simsapa/releases) page for Linux, MacOS, Windows.
 For Android, install from from the [Play Store](https://play.google.com/store/apps/details?id=io.github.simsapa.app) 
@@ -23,6 +23,10 @@ Installation guides: [Linux](install/linux.md) / [MacOS](install/macos.md) / [Wi
 
 <a href="/images/sutta-search-results-tab-screenshot.png" target="_blank">
 <img alt="Sutta Search - Results Tab" src="/images/sutta-search-results-tab-screenshot.png">
+</a>
+
+<a href="/images/gloss-tab-word-in-sentence-dhp44-45.png" target="_blank">
+<img alt="Gloss Tab Word-in-Sentence" src="/images/gloss-tab-word-in-sentence-dhp44-45.png">
 </a>
 
 <a href="/images/android-phone-portrait-light-theme.jpg" target="_blank">

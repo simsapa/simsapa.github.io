@@ -19,8 +19,6 @@ Github: [simsapa/simsapa-extensions-and-plugins](https://github.com/simsapa/sims
 
 ![Firefox Sidebar](../images/firefox-sidebar-anupadisesa-screenshot.png)
 
-![Firefox Word Lookup](../images/firefox-word-lookup-ditthadhammika-screenshot.png)
-
 ## Install the Chrome plugin
 
 The Chrome plugin is not yet published in the web store.
