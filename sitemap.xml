@@ -11,6 +11,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://simsapa.github.io/features/app-windows/</loc>
+         <lastmod>2026-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://simsapa.github.io/features/cli-localhost-api/</loc>
+         <lastmod>2026-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://simsapa.github.io/features/dhamma-texts/</loc>
+         <lastmod>2026-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://simsapa.github.io/features/search-queries/</loc>
          <lastmod>2026-11-20</lastmod>
          <changefreq>daily</changefreq>
