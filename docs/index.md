@@ -1,6 +1,12 @@
 # Simsapa Dhamma Reader
 
-A sutta reader and Pāli dictionary application. Feature highlights:
+A sutta reader and Pāli dictionary application.
+
+A short feature demo:
+
+<iframe width="750" height="420" src="https://www.youtube.com/embed/sHs6sPIQmqs" title="Simsapa Dhamma Reader v1.3 Feature Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Feature highlights:
 
 - [Fulltext search](features/search-queries.md) with Pāli declension matching
   + Suttas, commentaries, dictionaries and a book library
