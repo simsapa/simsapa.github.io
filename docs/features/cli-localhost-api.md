@@ -39,11 +39,22 @@ Kusalo pupphamiva pacessati."
 </a>
 
 When the skill files are installed with `simsapa install-skill`,
-agents such as [opencode.ai](https://opencode.ai/) can perform tasks and include quotes and references from the database instead of being hallucinated.
+agents such as [opencode.ai](https://opencode.ai/) can perform tasks and include quotes and references from the database, instead of the online posts the AI was trained on, or non-existing suttas being hallucinated by the AI.
+
+Such as a Dhamma question:
 
 ```
-Use the simsapa cli to find the Vinaya protocols related to Kathina privileges,
-create a PDF document with typst including quotes and uid text references.
+Use the simsapa cli to research how the Buddha teaches anattā in his own words,
+what specifically he means by it, how it is practised, and how it relates to
+other key terms.
+Create a PDF document with typst including verified quotes and sutta uid text references.
+```
+
+Or a Vinaya research topic:
+
+```
+Use the simsapa cli to find the Vinaya protocols related to Kathina privileges.
+Create a PDF document with typst including verified quotes and sutta uid text references.
 ```
 
 <img alt="OpenCode Vinaya Kathina Search" src="/images/opencode-vinaya-kathina-search.png">
