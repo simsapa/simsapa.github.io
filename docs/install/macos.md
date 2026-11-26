@@ -10,7 +10,7 @@ When starting the app, you will see a warning because the app is not signed, and
 
 **Allow apps from third-party locations:**
 
-Open System Preferences > Security & Privacy > scroll down and click "Open Anyway"
+Open System Settings > Security & Privacy > scroll down and click "Open Anyway"
 
 <img alt="MacOS Security and Privacy" src="/images/macos-privacy-open-anyway-screenshot.png">
 
